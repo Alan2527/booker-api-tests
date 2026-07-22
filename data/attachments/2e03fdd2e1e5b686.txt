@@ -1,0 +1,15 @@
+GET /booking
+Status: 200
+
+--- Request ---
+{
+  "firstname": "Alan",
+  "lastname": "Herrera"
+}
+
+--- Response ---
+[
+  {
+    "bookingid": 2942
+  }
+]

@@ -1,0 +1,28 @@
+PUT /booking/2928
+Status: 200
+
+--- Request ---
+{
+  "firstname": "Carlos",
+  "lastname": "Herrera",
+  "totalprice": 2000,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "2026-08-01",
+    "checkout": "2026-08-10"
+  },
+  "additionalneeds": "Desayuno"
+}
+
+--- Response ---
+{
+  "firstname": "Carlos",
+  "lastname": "Herrera",
+  "totalprice": 2000,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "2026-08-01",
+    "checkout": "2026-08-10"
+  },
+  "additionalneeds": "Desayuno"
+}

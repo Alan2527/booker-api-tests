@@ -1,0 +1,13 @@
+POST /auth
+Status: 200
+
+--- Request ---
+{
+  "username": "admin",
+  "password": "incorrecta"
+}
+
+--- Response ---
+{
+  "reason": "Bad credentials"
+}
