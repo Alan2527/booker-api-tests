@@ -38,16 +38,12 @@ jobs:
 
       - name: Instalar Allure Commandline
         run: |
-          curl -sL -o allure.tgz https://github.com/allure-framework/allure2/releases/download/2.29.0/allure-2.29.0.tgz
+          curl -sL -o allure.tgz https://github.com/allure-framework/allure2/releases/download/2.44.0/allure-2.44.0.tgz
           sudo tar -xzf allure.tgz -C /opt/
-          sudo ln -sf /opt/allure-2.29.0/bin/allure /usr/local/bin/allure
+          sudo ln -sf /opt/allure-2.44.0/bin/allure /usr/local/bin/allure
 
       - name: Generar reporte Allure
         run: allure generate allure-results --clean -o allure-report
-
-      - name: Forzar tema oscuro en el reporte
-        run: |
-          sed -i 's/<html/<html style="color-scheme: dark;"/' allure-report/index.html
 
       - name: Publicar reporte en GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
