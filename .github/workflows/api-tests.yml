@@ -45,6 +45,10 @@ jobs:
       - name: Generar reporte Allure
         run: allure generate allure-results --clean -o allure-report
 
+      - name: Forzar tema oscuro en el reporte
+        run: |
+          sed -i 's/<html/<html style="color-scheme: dark;"/' allure-report/index.html
+
       - name: Publicar reporte en GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         if: always()
