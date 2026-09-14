@@ -1,8 +1,0 @@
-DELETE /booking/3668
-Status: 403
-
---- Request ---
-(sin body)
-
---- Response ---
-Forbidden

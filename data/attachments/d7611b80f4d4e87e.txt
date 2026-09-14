@@ -1,0 +1,13 @@
+POST /auth
+Status: 200
+
+--- Request ---
+{
+  "username": "admin",
+  "password": "password123"
+}
+
+--- Response ---
+{
+  "token": "d5b25b50c1f774b"
+}
