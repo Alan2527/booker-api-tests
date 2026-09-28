@@ -1,0 +1,8 @@
+GET /booking/4785
+Status: 404
+
+--- Request ---
+(sin body)
+
+--- Response ---
+Not Found
