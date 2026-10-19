@@ -1,8 +1,0 @@
-DELETE /booking/3353
-Status: 201
-
---- Request ---
-(sin body)
-
---- Response ---
-Created
